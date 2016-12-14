@@ -9,4 +9,4 @@
     angular
         .module('blocJams')
         .controller('CollectionCtrl', CollectionCtrl);
-})()
+})();
