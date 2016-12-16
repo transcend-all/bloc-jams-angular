@@ -17,6 +17,10 @@
         @param {Object} song        
         */
         
+        var setSong = function(song){
+            if (currentBuzzObject){
+                
+        
         currentBuzzObject.stop();
                 currentSong.playing = null;
             }
@@ -27,7 +31,18 @@
             });
             
             currentSong = song;
-        };
+        }
+ 
+        /*
+        @desc playSong plays the current Buzz object
+        @function playSong
+        @param {object} song
+        */
+
+        var playSong = function(song){
+            currentBuzzObject.play();
+            song.playing = true;
+        }
         
         
         
@@ -36,16 +51,17 @@
             if (currentSong !== song){
                 setSong(song);
             
-            currentBuzzObject.play();
-            song.playing = true;
+            playSong(song);
                 
             } else if (currentSong === song){
                 if(currentBuzzObject.isPaused()){
-                    currentBuzzObject.play();
+                    playSong(song);
                     
                 }
             }
         };
+
+        
         
         SongPlayer.pause = function(song){
             currentBuzzObject.pause();
