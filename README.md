@@ -1,3 +1,9 @@
+# Evan's Note
+
+This is a version of Bloc's first app-building coursework that is built with AngularJS 1. Although Angular 1 is being replaced with Angular 2, this project was still valuable to me because it was during this project that the concept of an MVC app "clicked" in my mind, and ever since then building web apps has seemed much more intuitive to me.
+
+What follows is the standard documentation for Bloc's AngularJS Starter App.
+
 ## Bloc Frontend Project Starter
 
 A starter application for student projects in Bloc's [Frontend Web Development Course](https://www.bloc.io/frontend-development-bootcamp).
